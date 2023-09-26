@@ -1,0 +1,127 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200;400;700&display=swap');
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+    margin: 0; 
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 400;
+}
+
+/* set up the body */
+body {
+    display:grid;
+    place-content:center;
+   background-color:#E6D6FC;
+    min-height: 100vh;
+}
+
+/* make images easier to work with */
+img,
+picture {
+max-width: 100%;
+border-radius:15px ;
+
+   
+}
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+.container{
+    background-color:#FFFFFF;
+    display:flex;
+    flex-direction:column;
+    border-radius:15px 15px 0 0;
+    width:25rem;
+    padding:1rem;
+    border-bottom:1px solid #d2cbdb;
+}
+
+
+.card-content h1{
+    font-size:1.125rem;
+    color:#20293A;
+    font-family: 'Sora', sans-serif;
+    font-weight:700;
+
+}
+
+.card-content p{
+    font-size:1rem;
+    max-width:35ch;
+    color:#6C727F;
+    font-family: 'Sora', sans-serif;
+    font-weight:200;
+    line-height:1.5em;
+}
+
+.card-content{
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap:.5rem;
+}
+
+a{
+    text-decoration: none;
+    color:#883AE1;
+    font-family: 'Sora', sans-serif;
+    background-color: hsla(283, 85%, 77%, 0.355);
+    font-weight:700;
+    font-size:12px;
+    padding:.2rem 1rem;
+    border-radius:15px;
+    margin-top:1rem;
+    margin-bottom:.5rem;
+   
+}
+
+.bottom-card{
+    width:25rem;
+    background-color: #FFFFFF;
+    padding:1.2rem;
+    border-radius:0 0 15px 15px;
+    color:#6C727F;
+    font-family: 'Sora', sans-serif;
+    font-size:14px;
+}
