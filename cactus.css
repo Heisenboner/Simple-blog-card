@@ -33,7 +33,7 @@ p {
 body {
     display:grid;
     place-content:center;
-   background-color:#E6D6FC;
+   background-color:#FAFAF9;
     min-height: 100vh;
 }
 
